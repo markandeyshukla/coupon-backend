@@ -21,7 +21,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* ───────────── Middlewares ───────────── */
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin:[ 
+  "http://localhost:3000",
+  "https://couponbarter.netlify.app"
+  ]
+  }));
 app.use(express.json());
 
 /* ───────────── Static uploads (default.jpg वग़ैरह) ───────────── */
