@@ -23,7 +23,8 @@ const __dirname = path.dirname(__filename);
 /* ───────────── Middlewares ───────────── */
 app.use(cors({ origin:[ 
   "http://localhost:3000",
-  "https://couponbarter.netlify.app"
+  "https://couponbarter.netlify.app",
+  "https://couponbarter.netlify.app/landing"
   ]
   }));
 app.use(express.json());
